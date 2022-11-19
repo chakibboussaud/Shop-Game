@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- begin::Head -->
+
+<head>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../admin/assets/images/favicon.ico" />
+
+    <meta charset="utf-8" />
+    <title>Shop 1 Game | Money Making</title>
+    <meta name="description" content="Pocket | Money Making Scripy by DroidOXY">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--begin::Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+    <!--end::Fonts -->
+
+    <!--begin::Global Theme Styles(used by all pages) -->
+    <link href="css/offers.css" rel="stylesheet" type="text/css" />
+    <script src="offers.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <!--end::Global Theme Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        main: '#33a5d6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<!-- end::Head -->
+
+<!-- begin::Body -->
+
+<body>
+
+    <header class="" style="padding-top: 40px; font-weight: 600; font-size: 2em;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-whte container justify-content-between pt-4">
+            <div>
+                <a href="indexG.html">
+                    <img src="images/back.png" height="34" width="34">
+                </a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between"
+                style="background-color: #33a5d6; border-radius: 18px; padding: 1px 14px; padding-right: 0; color: #fff;">
+                <div>
+                    <span id="points">0</span>
+                    <span style="font-size: .98em;">POINTS</span>
+                </div>
+                <img src="images/coin.png" height="34" width="34" class="ml-2">
+            </div>
+            <div>
+                <a href="logout.php/?access_token=ecad44f9e1d14dbe87649c530bd5cc55">
+                    <img src="images/forward.png" height="34" width="34">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="mx-auto px-4 mt-4 max-w-lg">
+        <div class="grid grid-cols-2 gap-6">
+            <div class="border px-4 py-3 rounded-lg">
+                <a href="store.html" class="block flex items-center hover:text-white w-full h-full">
+                    <div><img src="images/store.png" height="34" width="34"
+                            class="mr-2"></div>
+                    <div class="font-bold text-main text-2xl">Store</div>
+                </a>
+            </div>
+
+            <div class="border px-4 py-3 rounded-lg">
+                <a href="request.php" class="block flex items-center hover:text-white w-full h-full">
+                    <div><img src="images/request.png" height="34" width="34"
+                            class="mr-2"></div>
+                    <div class="font-bold text-main text-2xl">Requests</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="mx-auto px-4 mb-6 max-w-lg">
+            <div class="gap-4 grid mt-10">
+                <!-- <div class="flex justify-center">
+						<div><img src="../dashboard/assets/media/images/icons/invite-2.png" height="64" width="64" class="mr-2"></div>
+					</div> -->
+                <div class="text-center mt-3">
+                    <div class="font-semibold text-lg">Share With Friends And Get <span class="text-main">1</span>
+                        Points</div>
+                    <div class="text-2xl font-bold">Your Link:</div>
+                </div>
+                <div>
+                    <div class="grid gap-6">
+                        <div>
+                            <input type="text" placeholder="Invite Link"
+                                class="px-3 py-0.5 rounded-xl border-main border-2 w-full outline-none text-center text-2xl"
+                                value="https://www.shop1game.shop/refer/?refer=R5PEHA" disabled>
+                        </div>
+                        <div class="mt-1">
+                            <button class="p-3 rounded-xl bg-main text-white w-full text-2xl"
+                                onclick="copyReferCodeToClipboard('')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="font-semibold text-xl text-center">Your Referrals: <span class="text-main">0</span></div>
+            </div>
+        </div>
+
+        <div class="mx-auto px-4 mt-10 max-w-lg">
+            <div class="gap-4 grid mt-10">
+                <form action="" method="post" class="grid gap-6">
+                    <div>
+                        <input type="text" placeholder="Enter A Coupon"
+                            class="px-3 py-1 rounded-xl border-main border-2 w-full outline-none text-center text-2xl"
+                            id="code">
+                    </div>
+                    <div class="mt-1">
+                        <button type="button" class="p-3 rounded-xl bg-main text-white w-full text-2xl"
+                            onclick="redeemCoupon($('#code').val())">Activate</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- <div class="gap-4 grid mt-10">
+				<div class="border px-10 py-3 bg-main font-bold text-white text-2xl rounded-xl">
+					<a href="coupon.php" class="block flex items-center hover:text-white w-full h-full">
+						<img src="../dashboard/assets/media/images/icons/coupon.png" height="34" width="34" class="mr-2">
+						<div>Coupon</div>
+					</a>
+				</div>
+			</div> -->
+
+        <div class="font-semibold text-xl text-center mt-6 my-2">Complete offer and earn points</div>
+
+        <div class="gap-4 grid mt-10">
+            <a href="https://smrturl.co/o/320246/53195605?s1="
+                target="_blank">
+                <div class="flex mb-4 justify-content-between align-items-center"
+                    style="background-color: #fff; border-radius: 6px; padding: 2px 14px;">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <img src="https://media.go2speed.org/brand/files/ogmobi/38918/thumbnails_100/icon-192.(13).png"
+                                height="40" width="40" style="border-radius: 50%;">
+                        </div>
+                        <div class="ml-2 text-dark" style="font-size: 1.4em;">
+                            <strong>Do you want to be a millionaire? - Multigeo - INCENT, Email Submit</strong>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span style="font-size: 1.8em; font-weight: 800; color: #05bcff;">1</span>
+                        <img src="images/coin.png" height="24" width="24" class="ml-2">
+                    </div>
+                </div>
+            </a>
+
+
+
+            <a href="https://smrturl.co/o/320246/53263547?s1="
+                target="_blank">
+                <div class="flex mb-4 justify-content-between align-items-center"
+                    style="background-color: #fff; border-radius: 6px; padding: 2px 14px;">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <img src="https://i.gyazo.com/191034c3c8f19eb3d529ac5458f576fc.png" height="40" width="40"
+                                style="border-radius: 50%;">
+                        </div>
+                        <div class="ml-2 text-dark" style="font-size: 1.4em;">
+                            <strong>Survey2Cash - VPN Survey</strong>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span style="font-size: 1.8em; font-weight: 800; color: #05bcff;">1</span>
+                        <img src="images/coin.png" height="24" width="24" class="ml-2">
+                    </div>
+                </div>
+            </a>
+            <a href="https://smrturl.co/o/320246/53299089?s1="
+                target="_blank">
+                <div class="flex mb-4 justify-content-between align-items-center"
+                    style="background-color: #fff; border-radius: 6px; padding: 2px 14px;">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <img src="https://i.gyazo.com/3ba799a7acc15c3c7714acb51da1bd0f.png" height="40" width="40"
+                                style="border-radius: 50%;">
+                        </div>
+                        <div class="ml-2 text-dark" style="font-size: 1.4em;">
+                            <strong>Survey2Cash - Finance Survey</strong>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span style="font-size: 1.8em; font-weight: 800; color: #05bcff;">1</span>
+                        <img src="images/coin.png" height="24" width="24" class="ml-2">
+                    </div>
+                </div>
+            </a>
+            <a href="https://smrturl.co/o/320246/53282417?s1="
+                target="_blank">
+                <div class="flex mb-4 justify-content-between align-items-center"
+                    style="background-color: #fff; border-radius: 6px; padding: 2px 14px;">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <img src="https://i.gyazo.com/799c8b18154b294ad9632189cc5f14cc.png" height="40" width="40"
+                                style="border-radius: 50%;">
+                        </div>
+                        <div class="ml-2 text-dark" style="font-size: 1.4em;">
+                            <strong>Survey2Cash - Sweep Survey</strong>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span style="font-size: 1.8em; font-weight: 800; color: #05bcff;">1</span>
+                        <img src="images/coin.png" height="24" width="24" class="ml-2">
+                    </div>
+                </div>
+            </a>
+            <a href="https://smrturl.co/o/320246/53297579?s1="
+                target="_blank">
+                <div class="flex mb-4 justify-content-between align-items-center"
+                    style="background-color: #fff; border-radius: 6px; padding: 2px 14px;">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <img src="https://gyazo.com/aebf52aa97ea59022daae765555ea68c.png" height="40" width="40"
+                                style="border-radius: 50%;">
+                        </div>
+                        <div class="ml-2 text-dark" style="font-size: 1.4em;">
+                            <strong>Click2SMS - New Gift Voucher</strong>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span style="font-size: 1.8em; font-weight: 800; color: #05bcff;">1</span>
+                        <img src="images/coin.png" height="24" width="24" class="ml-2">
+                    </div>
+                </div>
+            </a>
+            <a href="https://smrturl.co/o/320246/53297061?s1="
+                target="_blank">
+                <div class="flex mb-4 justify-content-between align-items-center"
+                    style="background-color: #fff; border-radius: 6px; padding: 2px 14px;">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <img src="https://gyazo.com/04d88109ce840a10d18f627b9f3ed70f.png" height="40" width="40"
+                                style="border-radius: 50%;">
+                        </div>
+                        <div class="ml-2 text-dark" style="font-size: 1.4em;">
+                            <strong>Click2SMS - Coin Master</strong>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span style="font-size: 1.8em; font-weight: 800; color: #05bcff;">1</span>
+                        <img src="images/coin.png" height="24" width="24" class="ml-2">
+                    </div>
+                </div>
+            </a>
+            <a href="https://smrturl.co/o/320246/53291752?s1="
+                target="_blank">
+                <div class="flex mb-4 justify-content-between align-items-center"
+                    style="background-color: #fff; border-radius: 6px; padding: 2px 14px;">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <img src="https://gyazo.com/3148452f3592ad11ee8e8d1b4a8e9f0b.png" height="40" width="40"
+                                style="border-radius: 50%;">
+                        </div>
+                        <div class="ml-2 text-dark" style="font-size: 1.4em;">
+                            <strong>Click2SMS - YouTube Premium</strong>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span style="font-size: 1.8em; font-weight: 800; color: #05bcff;">1</span>
+                        <img src="images/coin.png" height="24" width="24" class="ml-2">
+                    </div>
+                </div>
+            </a>
+            <a href="https://smrturl.co/o/320246/53268813?s1="
+                target="_blank">
+                <div class="flex mb-4 justify-content-between align-items-center"
+                    style="background-color: #fff; border-radius: 6px; padding: 2px 14px;">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <img src="https://gyazo.com/551342d5c4d499a8523df2e739ba5a98.png" height="40" width="40"
+                                style="border-radius: 50%;">
+                        </div>
+                        <div class="ml-2 text-dark" style="font-size: 1.4em;">
+                            <strong>Click2SMS - COD Points</strong>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span style="font-size: 1.8em; font-weight: 800; color: #05bcff;">1</span>
+                        <img src="images/coin.png" height="24" width="24" class="ml-2">
+                    </div>
+                </div>
+            </a>
+            <a href="https://smrturl.co/o/320246/53290382?s1="
+                target="_blank">
+                <div class="flex mb-4 justify-content-between align-items-center"
+                    style="background-color: #fff; border-radius: 6px; padding: 2px 14px;">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <img src="https://gyazo.com/f38ae3118b0b4efd5d78ce49b1ebc74f.png" height="40" width="40"
+                                style="border-radius: 50%;">
+                        </div>
+                        <div class="ml-2 text-dark" style="font-size: 1.4em;">
+                            <strong>Click2SMS - Win New PS5</strong>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span style="font-size: 1.8em; font-weight: 800; color: #05bcff;">1</span>
+                        <img src="images/coin.png" height="24" width="24" class="ml-2">
+                    </div>
+                </div>
+            </a>
+
+            <iframe src="https://api.adgem.com/v1/wall?appid=21072&playerid=boussaidchakib679@gmail.com"
+                style="width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999; min-height: 70vh;">Your
+                browser doesn't support iframes</iframe>
+        </div>
+    </div>
+
+
+    <!-- <audio id="mySound" src="assets/media/sound/tone.mp3"></audio> -->
+    <audio id="notifysound" src="assets/media/sound/tone.mp3"
+        style="visibility:hidden;width:0px;height:0px;z-index:-1;"></audio>
+
+
+    <!--begin::Global Theme Bundle(used by all pages) -->
+    <script src="assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+    <script src="assets/js/scripts.bundle.js" type="text/javascript"></script>
+    <script src="assets/js/pocket_rewards_app.js?ver=3.7" type="text/javascript"></script>
+    <script src="assets/js/custom.js?ver=3.7" type="text/javascript"></script>
+    <!--end::Global Theme Bundle -->
+
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+
+        $(document).ready(function () {
+            var pamt = 0;
+            setInterval(() => {
+                $.get('./refresh-points.php', function (res, status) {
+                    $('#points').html(res)
+                    if (res > pamt) {
+                        var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                        var source = audioCtx.createBufferSource();
+                        var xhr = new XMLHttpRequest();
+                        xhr.open('GET', 'assets/media/sound/tone.mp3');
+                        xhr.responseType = 'arraybuffer';
+                        xhr.addEventListener('load', function (r) {
+                            audioCtx.decodeAudioData(
+                                xhr.response,
+                                function (buffer) {
+                                    source.buffer = buffer;
+                                    source.connect(audioCtx.destination);
+                                    source.loop = false;
+                                });
+                            source.start(0);
+                        });
+                        xhr.send();
+                    }
+                    pamt = res
+                })
+            }, 3000);
+        })
+    </script>
+
+    <!--begin::Page Scripts(used by this page) -->
+    <script src="assets/js/pages/dashboard.js" type="text/javascript"></script>
+    <script src="assets/js/daily-checkin.js" type="text/javascript"></script>
+    <!--end::Page Scripts -->
+
+    <script>
+        function copy() {
+            /* Get the text field */
+            var copyText = document.getElementById("code");
+
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+            /* Copy the text inside the text field */
+            navigator.clipboard.writeText(copyText.value);
+
+            /* Alert the copied text */
+            alert("Copied the code: " + copyText.value);
+        }
+
+
+    </script>
+
+</body>
+
+<!-- end::Body -->
+
+</html>
